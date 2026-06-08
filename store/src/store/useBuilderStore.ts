@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-import type { Section } from "../../../types/src/types/section";
+import type { Section } from "../../../src/components/types/section";
 
 
 interface Store {

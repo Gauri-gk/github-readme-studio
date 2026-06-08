@@ -2,7 +2,7 @@ import { useBuilderStore } from "../../../store/src/store/useBuilderStore";
 
 import { v4 as uuid } from "uuid";
 
-import type { SectionType } from "../../../types/src/types/section";
+import type { SectionType } from "../../../src/components/types/section";
 
 
 export default function Sidebar() {
