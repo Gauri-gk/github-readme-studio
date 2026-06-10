@@ -1,6 +1,4 @@
-import RealApp from '../../../src/App'
+import RealApp from "../../src/App";
 
-export default RealApp
-
-
+export default RealApp;
 
