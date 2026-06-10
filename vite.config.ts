@@ -1,15 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'node:path'
 
-// Force Vite to use the project-root index.html and the correct TS entry.
 export default defineConfig({
   plugins: [react()],
+  // Ensure the app works on static hosts (Vercel/Render) that serve from '/'
+  base: '/',
   build: {
     rollupOptions: {
       input: {
-        main: 'index.html',
+        main: path.resolve(__dirname, 'index.html'),
       },
     },
   },
 })
+
 
